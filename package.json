@@ -4,10 +4,28 @@
   "description": "Project from The Odin Project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "Chamseddine-k",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "css-loader": "^7.1.4",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.7",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.107.2",
+    "webpack-cli": "^7.0.3",
+    "webpack-dev-server": "^5.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chamseddine-svg/restaurent-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Chamseddine-svg/restaurent-website/issues"
+  },
+  "homepage": "https://github.com/Chamseddine-svg/restaurent-website#readme"
 }
