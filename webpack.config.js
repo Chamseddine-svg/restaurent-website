@@ -1,4 +1,3 @@
-// webpack.config.js
 import path from "node:path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
@@ -12,6 +11,8 @@ export default {
   },
   devtool: "eval-source-map",
   devServer: {
+    static: "./dist",
+    open: true,
     watchFiles: ["./src/template.html"],
   },
   plugins: [
@@ -35,9 +36,4 @@ export default {
       },
     ],
   },
-  
-    devServer: {
-        static: "./dist",
-        open: true,
-    },
 };
